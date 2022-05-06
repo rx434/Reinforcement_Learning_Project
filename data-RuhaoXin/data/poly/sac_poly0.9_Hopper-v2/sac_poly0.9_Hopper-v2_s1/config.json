@@ -1,0 +1,54 @@
+{
+    "alpha":	0.2,
+    "auto_alpha":	false,
+    "batch_size":	256,
+    "debug":	false,
+    "delay_update_steps":	"auto",
+    "device":	"cpu",
+    "env_name":	"Hopper-v2",
+    "epochs":	1000,
+    "evaluate_bias":	true,
+    "exp_name":	"sac_poly0.9_Hopper-v2",
+    "gamma":	0.99,
+    "hidden_sizes":	[
+        256,
+        256
+    ],
+    "logger":	{
+        "<redq.utils.logx.EpochLogger object at 0x7f4a2d40b730>":	{
+            "epoch_dict":	{},
+            "exp_name":	"sac_poly0.9_Hopper-v2",
+            "first_row":	true,
+            "log_current_row":	{},
+            "log_headers":	[],
+            "output_dir":	"../data/sac_poly0.9_Hopper-v2/sac_poly0.9_Hopper-v2_s1",
+            "output_file":	{
+                "<_io.TextIOWrapper name='../data/sac_poly0.9_Hopper-v2/sac_poly0.9_Hopper-v2_s1/progress.txt' mode='w' encoding='UTF-8'>":	{
+                    "mode":	"w"
+                }
+            }
+        }
+    },
+    "logger_kwargs":	{
+        "exp_name":	"sac_poly0.9_Hopper-v2",
+        "output_dir":	"../data/sac_poly0.9_Hopper-v2/sac_poly0.9_Hopper-v2_s1"
+    },
+    "lr":	0.0003,
+    "max_ep_len":	1000,
+    "n_evals_per_epoch":	1,
+    "n_mc_cutoff":	350,
+    "n_mc_eval":	1000,
+    "num_Q":	2,
+    "num_min":	2,
+    "policy_update_delay":	20,
+    "polyak":	0.9,
+    "q_target_mode":	"min",
+    "replay_size":	1000000,
+    "reseed_each_epoch":	true,
+    "seed":	1,
+    "start_steps":	5000,
+    "steps_per_epoch":	1000,
+    "target_entropy":	"mbpo",
+    "total_steps":	1000001,
+    "utd_ratio":	1
+}
